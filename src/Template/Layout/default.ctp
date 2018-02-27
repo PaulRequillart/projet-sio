@@ -43,7 +43,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <div class="top-bar-section">
             <ul class="right">
                 <li> <?= $this->Html->link('Modules', ['controller'=>'Modules', 'action'=>'index']) ?> </li>
-                <li> <?= $this->Html->link('Classes', ['controller'=>'Classes', 'action'=>'index'])?> </li>
+                <li> <?= $this->Html->link('Classes', ['controller'=>'Groups', 'action'=>'index'])?> </li>
                 <?php
                      if($this->request->session()->check('Auth.User')){?>
                         <li><?= $this->Html->link(h($this->request->session()->read('Auth.User.login')), ['controller'=>'Users', 'action'=>'view',$this->request->session()->read('Auth.User.id') ], [array('class'=>'bouton')])?></li>
