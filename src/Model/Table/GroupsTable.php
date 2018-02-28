@@ -33,7 +33,7 @@ class GroupsTable extends Table
         parent::initialize($config);
 
         $this->setTable('groups');
-        $this->setDisplayField('id');
+        $this->setDisplayField('label');
         $this->setPrimaryKey('id');
 
         $this->hasMany('Users', [

@@ -28,6 +28,14 @@
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($user->id) ?></td>
         </tr>
+        <tr>
+            <th scope="row"><?= __('Created') ?></th>
+            <td><?= h($user->created) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Modified') ?></th>
+            <td><?= h($user->modified) ?></td>
+        </tr>
     </table>
     <div class="row">
         <h4><?= __('Nom') ?></h4>
@@ -38,12 +46,12 @@
         <?= $this->Text->autoParagraph(h($user->prenom)); ?>
     </div>
     <div class="row">
-        <h4><?= __('Email') ?></h4>
-        <?= $this->Text->autoParagraph(h($user->email)); ?>
+        <h4><?= __('Username') ?></h4>
+        <?= $this->Text->autoParagraph(h($user->username)); ?>
     </div>
     <div class="row">
-        <h4><?= __('Mdp') ?></h4>
-        <?= $this->Text->autoParagraph(h($user->mdp)); ?>
+        <h4><?= __('Password') ?></h4>
+        <?= $this->Text->autoParagraph(h($user->password)); ?>
     </div>
     <div class="related">
         <h4><?= __('Related Marks') ?></h4>

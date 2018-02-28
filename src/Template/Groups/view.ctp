@@ -16,46 +16,26 @@
     </ul>
 </nav>
 <div class="groups view large-9 medium-8 columns content">
-    <h3><?= h($group->id) ?></h3>
-    <table class="vertical-table">
-        <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($group->id) ?></td>
-        </tr>
-    </table>
-    <div class="row">
-        <h4><?= __('Label') ?></h4>
-        <?= $this->Text->autoParagraph(h($group->label)); ?>
-    </div>
+
+    <?= $this->Text->autoParagraph(h($group->label)); ?>
+
     <div class="related">
         <h4><?= __('Related Users') ?></h4>
         <?php if (!empty($group->users)): ?>
-        <table cellpadding="0" cellspacing="0">
-            <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Nom') ?></th>
-                <th scope="col"><?= __('Prenom') ?></th>
-                <th scope="col"><?= __('Email') ?></th>
-                <th scope="col"><?= __('Mdp') ?></th>
-                <th scope="col"><?= __('Group Id') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-            <?php foreach ($group->users as $users): ?>
-            <tr>
-                <td><?= h($users->id) ?></td>
-                <td><?= h($users->nom) ?></td>
-                <td><?= h($users->prenom) ?></td>
-                <td><?= h($users->email) ?></td>
-                <td><?= h($users->mdp) ?></td>
-                <td><?= h($users->group_id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Users', 'action' => 'view', $users->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Users', 'action' => 'edit', $users->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Users', 'action' => 'delete', $users->id], ['confirm' => __('Are you sure you want to delete # {0}?', $users->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th scope="col"><?= __('Nom') ?></th>
+                    <th scope="col"><?= __('Prenom') ?></th>
+                </tr>
+                <?php foreach ($group->users as $users): ?>
+                <tr>
+                    <td><?= h($users->nom) ?></td>
+                    <td><?= h($users->prenom) ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        <?php else: ?>
+            <p>Aucun élève dans cette classe.</p>
         <?php endif; ?>
     </div>
 </div>

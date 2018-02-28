@@ -1,7 +1,0 @@
-2018-02-23 13:40:38 Error: [RuntimeException] Unknown command `cake classes`. Run `cake --help` to get the list of valid commands. in C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Console\CommandRunner.php on line 177
-Stack Trace:
-#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Console\CommandRunner.php(137): Cake\Console\CommandRunner->getShell(Object(Cake\Console\ConsoleIo), Object(Cake\Console\CommandCollection), 'classes')
-#1 C:\wamp64\www\projetSIO\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
-#2 {main}
-
-

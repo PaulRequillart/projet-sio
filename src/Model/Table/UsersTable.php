@@ -19,6 +19,8 @@ use Cake\Validation\Validator;
  * @method \App\Model\Entity\User patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
  * @method \App\Model\Entity\User[] patchEntities($entities, array $data, array $options = [])
  * @method \App\Model\Entity\User findOrCreate($search, callable $callback = null, $options = [])
+ *
+ * @mixin \Cake\ORM\Behavior\TimestampBehavior
  */
 class UsersTable extends Table
 {
@@ -36,6 +38,8 @@ class UsersTable extends Table
         $this->setTable('users');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->addBehavior('Timestamp');
 
         $this->belongsTo('Groups', [
             'foreignKey' => 'group_id',
@@ -69,14 +73,19 @@ class UsersTable extends Table
             ->notEmpty('prenom');
 
         $validator
-            ->email('email')
-            ->requirePresence('email', 'create')
-            ->notEmpty('email');
+            ->scalar('username')
+            ->requirePresence('username', 'create')
+            ->notEmpty('username');
 
         $validator
-            ->scalar('mdp')
-            ->requirePresence('mdp', 'create')
-            ->notEmpty('mdp');
+            ->scalar('password')
+            ->requirePresence('password', 'create')
+            ->notEmpty('password');
+        
+        $validator
+            ->add('role', 'inList', [
+                'rule' => ['inList', ['admin', 'eleve', 'professeur']],
+                'message' => 'Merci de rentrer un role valide']);
 
         return $validator;
     }
@@ -90,7 +99,7 @@ class UsersTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['email']));
+        $rules->add($rules->isUnique(['username']));
         $rules->add($rules->existsIn(['group_id'], 'Groups'));
 
         return $rules;

@@ -2,6 +2,8 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
+
 
 /**
  * Groups Controller
@@ -18,6 +20,7 @@ class GroupsController extends AppController
      *
      * @return \Cake\Http\Response|void
      */
+
     public function index()
     {
         $groups = $this->paginate($this->Groups);
@@ -103,5 +106,22 @@ class GroupsController extends AppController
         }
 
         return $this->redirect(['action' => 'index']);
+    }
+
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+        //$this->Auth->allow('add');
+
+        $user = $this->Auth->user();
+        
+
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            $this->Auth->allow(['index', 'delete', 'add']);
+        }
+        if (!isset($user['role'])) {
+            $this->Auth->allow(['index']);
+        }
+        
     }
 }

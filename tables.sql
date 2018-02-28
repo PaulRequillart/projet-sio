@@ -14,9 +14,12 @@ CREATE TABLE users(
     id int AUTO_INCREMENT PRIMARY KEY,
     nom text NOT NULL,
     prenom text NOT NULL,
-    email text NOT NULL,
-    mdp text NOT NULL,
-    group_id int NOT NULL REFERENCES groups(id)
+    username text NOT NULL,
+    password text NOT NULL,
+    role text,
+    group_id int NOT NULL REFERENCES groups(id),
+    created DATETIME DEFAULT NULL,
+    modified DATETIME DEFAULT NULL
 );
 
 CREATE TABLE modules(
