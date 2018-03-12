@@ -46,7 +46,7 @@ $cakeDescription = 'Univ\'info';
             <ul class="right">
 
             <!-- MENU ADMIN -->
-            
+
             <?php
                 if($this->request->session()->check('Auth.User')){
                     $role = $this->request->session()->read('Auth.User.role');
@@ -64,6 +64,7 @@ $cakeDescription = 'Univ\'info';
             -->
 
              <!-- MENU PROF -->
+    
 
                     <?php }else if($role == 'professeur'){ ?>
                         <li> <?= $this->Html->link('Mes classes', ['controller'=>'Groups', 'action'=>'index'])?> </li>
