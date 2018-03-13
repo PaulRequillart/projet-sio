@@ -1,0 +1,4 @@
+28/02/18 Paul Requillart-Dole
+
+- ajout bootstrap/jquery dans defaut.ctp
+- ajout onglet "eleve" sur le menu dans defaut.ctp
