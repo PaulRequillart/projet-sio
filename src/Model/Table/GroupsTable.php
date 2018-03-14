@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * Groups Model
  *
  * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\HasMany $Users
+ * @property \App\Model\Table\ModulesTable|\Cake\ORM\Association\HasMany $Modules
  *
  * @method \App\Model\Entity\Group get($primaryKey, $options = [])
  * @method \App\Model\Entity\Group newEntity($data = null, array $options = [])
@@ -37,6 +38,10 @@ class GroupsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->hasMany('Users', [
+            'foreignKey' => 'group_id'
+        ]);
+
+        $this->hasMany('Modules', [
             'foreignKey' => 'group_id'
         ]);
     }

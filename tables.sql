@@ -9,7 +9,6 @@ CREATE TABLE groups(
     label text NOT NULL
 );
 
-
 CREATE TABLE users(
     id int AUTO_INCREMENT PRIMARY KEY,
     nom text NOT NULL,
@@ -24,7 +23,8 @@ CREATE TABLE users(
 
 CREATE TABLE modules(
     id int AUTO_INCREMENT PRIMARY KEY,
-    label text NOT NULL
+    label text NOT NULL,
+    group_id int NOT NULL REFERENCES groups(id)
 );
 
 CREATE TABLE marks(

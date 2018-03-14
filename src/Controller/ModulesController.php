@@ -20,6 +20,10 @@ class ModulesController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Groups']
+        ];
+        
         $modules = $this->paginate($this->Modules);
 
         $this->set(compact('modules'));
@@ -35,7 +39,7 @@ class ModulesController extends AppController
     public function view($id = null)
     {
         $module = $this->Modules->get($id, [
-            'contain' => ['Marks']
+            'contain' => ['Groups', 'Marks']
         ]);
 
         $this->set('module', $module);
@@ -58,7 +62,8 @@ class ModulesController extends AppController
             }
             $this->Flash->error(__('The module could not be saved. Please, try again.'));
         }
-        $this->set(compact('module'));
+        $groups = $this->Modules->Groups->find('list', ['limit' => 200]);
+        $this->set(compact('module', 'groups'));
     }
 
     /**

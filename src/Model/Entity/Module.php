@@ -8,7 +8,9 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $label
+ * @property int $group_id
  *
+ * @property \App\Model\Entity\Group $group
  * @property \App\Model\Entity\Mark[] $marks
  */
 class Module extends Entity
@@ -25,6 +27,7 @@ class Module extends Entity
      */
     protected $_accessible = [
         'label' => true,
-        'marks' => true
+        'marks' => true,
+        'group_id' => true,
     ];
 }

@@ -10,6 +10,7 @@ use Cake\ORM\Entity;
  * @property string $label
  *
  * @property \App\Model\Entity\User[] $users
+ * @property \App\Model\Entity\Module[] $modules
  */
 class Group extends Entity
 {
@@ -25,6 +26,7 @@ class Group extends Entity
      */
     protected $_accessible = [
         'label' => true,
-        'users' => true
+        'users' => true,
+        'modules' => true
     ];
 }

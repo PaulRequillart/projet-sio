@@ -9,6 +9,7 @@ use Cake\Validation\Validator;
 /**
  * Modules Model
  *
+ * @property \App\Model\Table\GroupsTable|\Cake\ORM\Association\BelongsTo $Groups
  * @property \App\Model\Table\MarksTable|\Cake\ORM\Association\HasMany $Marks
  *
  * @method \App\Model\Entity\Module get($primaryKey, $options = [])
@@ -36,6 +37,11 @@ class ModulesTable extends Table
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
 
+        $this->belongsTo('Groups', [
+            'foreignKey' => 'group_id',
+            'joinType' => 'INNER'
+        ]);
+
         $this->hasMany('Marks', [
             'foreignKey' => 'module_id'
         ]);
@@ -59,5 +65,20 @@ class ModulesTable extends Table
             ->notEmpty('label');
 
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    
+    public function buildRules(RulesChecker $rules)
+    {
+        $rules->add($rules->existsIn(['group_id'], 'Groups'));
+
+        return $rules;
     }
 }

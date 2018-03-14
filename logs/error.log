@@ -584,3 +584,1125 @@ Stack Trace:
 #19 {main}
 
 
+2018-03-13 08:35:10 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view/
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(53): Cake\ORM\Table->get(NULL, Array)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->view()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-03-13 08:35:15 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /users/view/
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(53): Cake\ORM\Table->get(NULL, Array)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->view()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-03-13 08:52:47 Error: [Cake\Routing\Exception\DuplicateNamedRouteException] A route named "login" has already been connected to "/login".
+Exception Attributes: array (
+  'name' => 'login',
+  'url' => '/login',
+  'duplicate' => 
+  Cake\Routing\Route\DashedRoute::__set_state(array(
+     '_inflectedDefaults' => false,
+     'keys' => 
+    array (
+    ),
+     'options' => 
+    array (
+      '_name' => 'login',
+      '_ext' => 
+      array (
+      ),
+      'routeClass' => 'Cake\\Routing\\Route\\DashedRoute',
+    ),
+     'defaults' => 
+    array (
+      'controller' => 'Users',
+      'action' => 'login',
+      'plugin' => NULL,
+    ),
+     'template' => '/login',
+     '_greedy' => false,
+     '_compiledRoute' => NULL,
+     '_name' => 'users:login',
+     '_extensions' => 
+    array (
+    ),
+     'middleware' => 
+    array (
+    ),
+  )),
+)
+Request URL: /users/login
+Referer URL: http://localhost:8765/
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(719): Cake\Routing\RouteCollection->add(Object(Cake\Routing\Route\DashedRoute), Array)
+#1 C:\wamp64\www\projetSIO\config\routes.php(63): Cake\Routing\RouteBuilder->connect('/login', Array, Array)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#4 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(1101): include('C:\\wamp64\\www\\p...')
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(587): Cake\Routing\Router::_loadRoutes()
+#7 C:\wamp64\www\projetSIO\config\routes.php(64): Cake\Routing\Router::url(Array)
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Http\BaseApplication->{closure}(Object(Cake\Routing\RouteBuilder))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#10 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(74): require('C:\\wamp64\\www\\p...')
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(61): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(78): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#24 {main}
+
+
+2018-03-13 08:52:49 Error: [Cake\Routing\Exception\DuplicateNamedRouteException] A route named "login" has already been connected to "/login".
+Exception Attributes: array (
+  'name' => 'login',
+  'url' => '/login',
+  'duplicate' => 
+  Cake\Routing\Route\DashedRoute::__set_state(array(
+     '_inflectedDefaults' => false,
+     'keys' => 
+    array (
+    ),
+     'options' => 
+    array (
+      '_name' => 'login',
+      '_ext' => 
+      array (
+      ),
+      'routeClass' => 'Cake\\Routing\\Route\\DashedRoute',
+    ),
+     'defaults' => 
+    array (
+      'controller' => 'Users',
+      'action' => 'login',
+      'plugin' => NULL,
+    ),
+     'template' => '/login',
+     '_greedy' => false,
+     '_compiledRoute' => NULL,
+     '_name' => 'users:login',
+     '_extensions' => 
+    array (
+    ),
+     'middleware' => 
+    array (
+    ),
+  )),
+)
+Request URL: /debug-kit/toolbar/8b6308e0-82e2-4076-9549-1c642e8d63d9
+Referer URL: http://localhost:8765/users/login
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(719): Cake\Routing\RouteCollection->add(Object(Cake\Routing\Route\DashedRoute), Array)
+#1 C:\wamp64\www\projetSIO\config\routes.php(63): Cake\Routing\RouteBuilder->connect('/login', Array, Array)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#4 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(1101): include('C:\\wamp64\\www\\p...')
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(587): Cake\Routing\Router::_loadRoutes()
+#7 C:\wamp64\www\projetSIO\config\routes.php(64): Cake\Routing\Router::url(Array)
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Http\BaseApplication->{closure}(Object(Cake\Routing\RouteBuilder))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#10 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(74): require('C:\\wamp64\\www\\p...')
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(61): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(78): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#24 {main}
+
+
+2018-03-13 08:52:58 Error: [Cake\Routing\Exception\DuplicateNamedRouteException] A route named "login" has already been connected to "/login".
+Exception Attributes: array (
+  'name' => 'login',
+  'url' => '/login',
+  'duplicate' => 
+  Cake\Routing\Route\DashedRoute::__set_state(array(
+     '_inflectedDefaults' => false,
+     'keys' => 
+    array (
+    ),
+     'options' => 
+    array (
+      '_name' => 'login',
+      '_ext' => 
+      array (
+      ),
+      'routeClass' => 'Cake\\Routing\\Route\\DashedRoute',
+    ),
+     'defaults' => 
+    array (
+      'controller' => 'Users',
+      'action' => 'login',
+      'plugin' => NULL,
+    ),
+     'template' => '/login',
+     '_greedy' => false,
+     '_compiledRoute' => NULL,
+     '_name' => 'users:login',
+     '_extensions' => 
+    array (
+    ),
+     'middleware' => 
+    array (
+    ),
+  )),
+)
+Request URL: /login
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(719): Cake\Routing\RouteCollection->add(Object(Cake\Routing\Route\DashedRoute), Array)
+#1 C:\wamp64\www\projetSIO\config\routes.php(63): Cake\Routing\RouteBuilder->connect('/login', Array, Array)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#4 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(1101): include('C:\\wamp64\\www\\p...')
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(587): Cake\Routing\Router::_loadRoutes()
+#7 C:\wamp64\www\projetSIO\config\routes.php(64): Cake\Routing\Router::url(Array)
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Http\BaseApplication->{closure}(Object(Cake\Routing\RouteBuilder))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#10 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(74): require('C:\\wamp64\\www\\p...')
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(61): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(78): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#24 {main}
+
+
+2018-03-13 08:52:59 Error: [Cake\Routing\Exception\DuplicateNamedRouteException] A route named "login" has already been connected to "/login".
+Exception Attributes: array (
+  'name' => 'login',
+  'url' => '/login',
+  'duplicate' => 
+  Cake\Routing\Route\DashedRoute::__set_state(array(
+     '_inflectedDefaults' => false,
+     'keys' => 
+    array (
+    ),
+     'options' => 
+    array (
+      '_name' => 'login',
+      '_ext' => 
+      array (
+      ),
+      'routeClass' => 'Cake\\Routing\\Route\\DashedRoute',
+    ),
+     'defaults' => 
+    array (
+      'controller' => 'Users',
+      'action' => 'login',
+      'plugin' => NULL,
+    ),
+     'template' => '/login',
+     '_greedy' => false,
+     '_compiledRoute' => NULL,
+     '_name' => 'users:login',
+     '_extensions' => 
+    array (
+    ),
+     'middleware' => 
+    array (
+    ),
+  )),
+)
+Request URL: /debug-kit/toolbar/973a23b2-c98e-42d9-a5f3-b01d34e1e3a3
+Referer URL: http://localhost:8765/login
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(719): Cake\Routing\RouteCollection->add(Object(Cake\Routing\Route\DashedRoute), Array)
+#1 C:\wamp64\www\projetSIO\config\routes.php(63): Cake\Routing\RouteBuilder->connect('/login', Array, Array)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#4 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(1101): include('C:\\wamp64\\www\\p...')
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(587): Cake\Routing\Router::_loadRoutes()
+#7 C:\wamp64\www\projetSIO\config\routes.php(64): Cake\Routing\Router::url(Array)
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Http\BaseApplication->{closure}(Object(Cake\Routing\RouteBuilder))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#10 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(74): require('C:\\wamp64\\www\\p...')
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(61): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(78): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#24 {main}
+
+
+2018-03-13 08:55:05 Error: [Cake\Routing\Exception\DuplicateNamedRouteException] A route named "login" has already been connected to "/login".
+Exception Attributes: array (
+  'name' => 'login',
+  'url' => '/login',
+  'duplicate' => 
+  Cake\Routing\Route\DashedRoute::__set_state(array(
+     '_inflectedDefaults' => false,
+     'keys' => 
+    array (
+    ),
+     'options' => 
+    array (
+      '_name' => 'login',
+      '_ext' => 
+      array (
+      ),
+      'routeClass' => 'Cake\\Routing\\Route\\DashedRoute',
+    ),
+     'defaults' => 
+    array (
+      'controller' => 'Users',
+      'action' => 'login',
+      'plugin' => NULL,
+    ),
+     'template' => '/login',
+     '_greedy' => false,
+     '_compiledRoute' => NULL,
+     '_name' => 'users:login',
+     '_extensions' => 
+    array (
+    ),
+     'middleware' => 
+    array (
+    ),
+  )),
+)
+Request URL: /login
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(719): Cake\Routing\RouteCollection->add(Object(Cake\Routing\Route\DashedRoute), Array)
+#1 C:\wamp64\www\projetSIO\config\routes.php(63): Cake\Routing\RouteBuilder->connect('/login', Array, Array)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#4 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(1101): include('C:\\wamp64\\www\\p...')
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(587): Cake\Routing\Router::_loadRoutes()
+#7 C:\wamp64\www\projetSIO\config\routes.php(64): Cake\Routing\Router::url(Array)
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Http\BaseApplication->{closure}(Object(Cake\Routing\RouteBuilder))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#10 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(74): require('C:\\wamp64\\www\\p...')
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(61): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(78): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#24 {main}
+
+
+2018-03-13 08:55:06 Error: [Cake\Routing\Exception\DuplicateNamedRouteException] A route named "login" has already been connected to "/login".
+Exception Attributes: array (
+  'name' => 'login',
+  'url' => '/login',
+  'duplicate' => 
+  Cake\Routing\Route\DashedRoute::__set_state(array(
+     '_inflectedDefaults' => false,
+     'keys' => 
+    array (
+    ),
+     'options' => 
+    array (
+      '_name' => 'login',
+      '_ext' => 
+      array (
+      ),
+      'routeClass' => 'Cake\\Routing\\Route\\DashedRoute',
+    ),
+     'defaults' => 
+    array (
+      'controller' => 'Users',
+      'action' => 'login',
+      'plugin' => NULL,
+    ),
+     'template' => '/login',
+     '_greedy' => false,
+     '_compiledRoute' => NULL,
+     '_name' => 'users:login',
+     '_extensions' => 
+    array (
+    ),
+     'middleware' => 
+    array (
+    ),
+  )),
+)
+Request URL: /debug-kit/toolbar/ec2ad3e9-c91c-42e0-9c51-611974805a7b
+Referer URL: http://localhost:8765/login
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(719): Cake\Routing\RouteCollection->add(Object(Cake\Routing\Route\DashedRoute), Array)
+#1 C:\wamp64\www\projetSIO\config\routes.php(63): Cake\Routing\RouteBuilder->connect('/login', Array, Array)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Routing\Router::{closure}(Object(Cake\Routing\RouteBuilder))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#4 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(1101): include('C:\\wamp64\\www\\p...')
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(587): Cake\Routing\Router::_loadRoutes()
+#7 C:\wamp64\www\projetSIO\config\routes.php(64): Cake\Routing\Router::url(Array)
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\RouteBuilder.php(948): Cake\Http\BaseApplication->{closure}(Object(Cake\Routing\RouteBuilder))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Router.php(989): Cake\Routing\RouteBuilder->scope('/', Object(Closure), NULL)
+#10 C:\wamp64\www\projetSIO\config\routes.php(83): Cake\Routing\Router::scope('/', Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(74): require('C:\\wamp64\\www\\p...')
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(61): Cake\Http\BaseApplication->routes(Object(Cake\Routing\RouteBuilder))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(78): Cake\Routing\Middleware\RoutingMiddleware->loadRoutes()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#24 {main}
+
+
+2018-03-13 08:55:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Login could not be found.
+Exception Attributes: array (
+  'class' => 'Login',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /login
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-03-14 10:00:12 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(68): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:04:04 Error: Fatal Error (1): Call to a member function find() on null in [C:\wamp64\www\projetSIO\src\Controller\ModulesController.php, line 61]
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-03-14 10:04:04 Warning: Headers already sent in C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Debugger.php:850
+2018-03-14 10:04:04 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null in C:\wamp64\www\projetSIO\src\Controller\ModulesController.php on line 61
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp64\\www\\p...', 61)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-03-14 10:04:09 Error: Fatal Error (1): Call to a member function find() on null in [C:\wamp64\www\projetSIO\src\Controller\ModulesController.php, line 61]
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-03-14 10:04:10 Warning: Headers already sent in C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Debugger.php:850
+2018-03-14 10:04:10 Error: [Cake\Error\FatalErrorException] Call to a member function find() on null in C:\wamp64\www\projetSIO\src\Controller\ModulesController.php on line 61
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\wamp64\\www\\p...', 61)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-03-14 10:05:03 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(54): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:14:15 Error: [InvalidArgumentException] Groups is not associated with Modules
+Request URL: /groups/view/2
+Referer URL: http://localhost:8765/groups
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(338): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\GroupsTable), 'Modules', Array, Array)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(467): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\GroupsTable))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(438): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\GroupsTable))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Query.php(1066): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\GroupsTable), true)
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Query.php(1018): Cake\ORM\Query->_transformQuery()
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(136): Cake\ORM\Query->sql()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(313): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(288): Cake\ORM\Query->_execute()
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(416): Cake\ORM\Query->all()
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(427): Cake\ORM\Query->first()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1445): Cake\ORM\Query->firstOrFail()
+#15 C:\wamp64\www\projetSIO\src\Controller\GroupsController.php(43): Cake\ORM\Table->get('2', Array)
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\GroupsController->view('2')
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\GroupsController))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#32 {main}
+
+
+2018-03-14 10:16:36 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(54): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:20:13 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(54): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:24:03 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(54): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:25:10 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(54): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:25:23 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(54): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:47:01 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(58): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:47:57 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(58): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:49:07 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(58): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 10:55:52 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(58): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 11:04:50 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(59): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 11:06:01 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(58): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 11:11:24 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(58): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 12:23:49 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(58): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-03-14 12:28:21 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'group_id' doesn't have a default value
+Request URL: /modules/add
+Referer URL: http://localhost:8765/modules/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1929): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1823): Cake\ORM\Table->_insert(Object(App\Model\Entity\Module), Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1736): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Module), Object(ArrayObject))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1459): Cake\ORM\Table->Cake\ORM\{closure}()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(682): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\Database\Connection->transactional(Object(Closure))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1737): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#12 C:\wamp64\www\projetSIO\src\Controller\ModulesController.php(58): Cake\ORM\Table->save(Object(App\Model\Entity\Module))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\ModulesController->add()
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ModulesController))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+

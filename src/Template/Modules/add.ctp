@@ -18,6 +18,7 @@
         <legend><?= __('Add Module') ?></legend>
         <?php
             echo $this->Form->control('label');
+            echo $this->Form->control('group_id', ['options' => $groups, 'label' => 'Classe']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

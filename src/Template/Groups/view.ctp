@@ -37,5 +37,21 @@
         <?php else: ?>
             <p>Aucun élève dans cette classe.</p>
         <?php endif; ?>
+
+        <h4><?= __('Related Modules') ?></h4>
+        <?php if (!empty($group->modules)): ?>
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <th scope="col"><?= __('Label') ?></th>
+                </tr>
+                <?php foreach ($group->modules as $modules): ?>
+                <tr>
+                    <td><?= h($modules->label) ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        <?php else: ?>
+            <p>Aucun modules dans cette classe.</p>
+        <?php endif; ?>
     </div>
 </div>
