@@ -60,6 +60,7 @@ class UsersController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
+
     public function add()
     {
         $user = $this->Users->newEntity();
@@ -93,7 +94,7 @@ class UsersController extends AppController
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['controller'=>'Users','action' => 'add']);
             }
             $this->Flash->error(__('The user could not be saved. Please, try again.'));
         }

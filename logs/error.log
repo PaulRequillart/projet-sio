@@ -1706,3 +1706,41 @@ Stack Trace:
 #29 {main}
 
 
+2018-03-15 20:17:30 Error: Fatal Error (1): Call to undefined function App\Controller\beforeMarshal() in [C:\wamp64\www\projetSIO\src\Controller\UsersController.php, line 77]
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-03-15 20:17:30 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\beforeMarshal() in C:\wamp64\www\projetSIO\src\Controller\UsersController.php on line 77
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp64\\www\\p...', 77)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-03-15 20:19:40 Error: Fatal Error (1): Call to undefined function App\Controller\beforeMarshal() in [C:\wamp64\www\projetSIO\src\Controller\UsersController.php, line 69]
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-03-15 20:19:40 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\beforeMarshal() in C:\wamp64\www\projetSIO\src\Controller\UsersController.php on line 69
+Request URL: /users/add
+Referer URL: http://localhost:8765/users/add
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp64\\www\\p...', 69)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

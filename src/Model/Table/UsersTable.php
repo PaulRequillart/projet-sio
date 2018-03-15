@@ -5,6 +5,8 @@ use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
+use Cake\Event\Event;
+use ArrayObject;
 
 /**
  * Users Model
@@ -78,6 +80,10 @@ class UsersTable extends Table
             ->notEmpty('username');
 
         $validator
+            ->add('email', 'valid-email', ['rule' => 'email'])
+            ->notEmpty('email');
+
+        $validator
             ->scalar('password')
             ->requirePresence('password', 'create')
             ->notEmpty('password');
@@ -103,5 +109,12 @@ class UsersTable extends Table
         $rules->add($rules->existsIn(['group_id'], 'Groups'));
 
         return $rules;
+    }
+
+    public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
+    {
+        if(isset($data['nom']) && isset($data['prenom'])) {
+            $data['username'] = $data['prenom'].'.'.$data['nom'];
+        }
     }
 }

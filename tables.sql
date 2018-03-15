@@ -14,6 +14,7 @@ CREATE TABLE users(
     nom text NOT NULL,
     prenom text NOT NULL,
     username text NOT NULL,
+    email text NOT NULL,
     password text NOT NULL,
     role text,
     group_id int NOT NULL REFERENCES groups(id),

@@ -11,6 +11,7 @@ use Cake\Auth\DefaultPasswordHasher;
  * @property string $nom
  * @property string $prenom
  * @property string $username
+ * @property string $email
  * @property string $password
  * @property int $group_id
  * @property \Cake\I18n\FrozenTime $created
@@ -35,6 +36,7 @@ class User extends Entity
         'nom' => true,
         'prenom' => true,
         'username' => true,
+        'email' => true,
         'password' => true,
         'role'=>true,
         'group_id' => true,
