@@ -1,3 +1,10 @@
+<html>
+<head>
+	<?= $this->Html->css('login.css') ?>
+</head>
+
+<body>
+
 <div class="users form">
 <?= $this->Flash->render() ?>
 <?= $this->Form->create() ?>
@@ -107,3 +114,6 @@
 	
 	<?= $this->Form->end() ?>
 </div>
+
+</body>
+</html>
