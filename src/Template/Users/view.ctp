@@ -9,53 +9,33 @@
         <li class="heading"><?= __('Actions') ?></li>
         <li><?= $this->Html->link(__('Edit User'), ['action' => 'edit', $user->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Delete User'), ['action' => 'delete', $user->id], ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New User'), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Groups'), ['controller' => 'Groups', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New Group'), ['controller' => 'Groups', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List Marks'), ['controller' => 'Marks', 'action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('New Mark'), ['controller' => 'Marks', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="users view large-9 medium-8 columns content">
-    <h3><?= h($user->id) ?></h3>
+    <div class="row">
+        <h4>Bienvenue <?= h($user->prenom).' '.h($user->nom); ?></h4>
+    </div>
+
     <table class="vertical-table">
         <tr>
-            <th scope="row"><?= __('Group') ?></th>
-            <td><?= $user->has('group') ? $this->Html->link($user->group->id, ['controller' => 'Groups', 'action' => 'view', $user->group->id]) : '' ?></td>
+            <th scope="row"><?= __('Username') ?></th>
+            <td><?= h($user->username); ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($user->id) ?></td>
+            <th scope="row"><?= __('Classe') ?></th>
+            <td><?= $user->has('group') ? $this->Html->link($user->group->label, ['controller' => 'Groups', 'action' => 'view', $user->group->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Created') ?></th>
             <td><?= h($user->created) ?></td>
         </tr>
-        <tr>
-            <th scope="row"><?= __('Modified') ?></th>
-            <td><?= h($user->modified) ?></td>
-        </tr>
     </table>
-    <div class="row">
-        <h4><?= __('Nom') ?></h4>
-        <?= $this->Text->autoParagraph(h($user->nom)); ?>
-    </div>
-    <div class="row">
-        <h4><?= __('Prenom') ?></h4>
-        <?= $this->Text->autoParagraph(h($user->prenom)); ?>
-    </div>
-    <div class="row">
-        <h4><?= __('Username') ?></h4>
-        <?= $this->Text->autoParagraph(h($user->username)); ?>
-    </div>
-    <div class="row">
-        <h4><?= __('Password') ?></h4>
-        <?= $this->Text->autoParagraph(h($user->password)); ?>
-    </div>
+    
     <div class="related">
+        
+        <?php if (!empty($user->marks) && $user->group->label != 'admin' ): ?>
         <h4><?= __('Related Marks') ?></h4>
-        <?php if (!empty($user->marks)): ?>
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <th scope="col"><?= __('Id') ?></th>

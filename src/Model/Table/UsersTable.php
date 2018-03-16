@@ -114,7 +114,10 @@ class UsersTable extends Table
     public function beforeMarshal(Event $event, ArrayObject $data, ArrayObject $options)
     {
         if(isset($data['nom']) && isset($data['prenom'])) {
-            $data['username'] = $data['prenom'].'.'.$data['nom'];
+            $prenom = $data['prenom'];
+            $nom = $data['nom'];
+            $username = strtolower($prenom[0].'.'.$nom);
+            $data['username'] = $username;
         }
     }
 }

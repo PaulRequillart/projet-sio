@@ -17,20 +17,19 @@
 </nav>
 <div class="groups view large-9 medium-8 columns content">
 
-    <?= $this->Text->autoParagraph(h($group->label)); ?>
-
+    <h3><?= h($group->label); ?></h3>
     <div class="related">
         <h4><?= __('Related Users') ?></h4>
-        <?php if (!empty($group->users)): ?>
+        <?php if(!empty($group->users)): ?>
             <table cellpadding="0" cellspacing="0">
                 <tr>
                     <th scope="col"><?= __('Nom') ?></th>
                     <th scope="col"><?= __('Prenom') ?></th>
                 </tr>
-                <?php foreach ($group->users as $users): ?>
+                <?php foreach ($group->users as $user): ?>
                 <tr>
-                    <td><?= h($users->nom) ?></td>
-                    <td><?= h($users->prenom) ?></td>
+                    <td><?= h($user->nom) ?></td>
+                    <td><?= h($user->prenom) ?></td>
                 </tr>
                 <?php endforeach; ?>
             </table>

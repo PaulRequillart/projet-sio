@@ -38,8 +38,7 @@ class GroupsController extends AppController
     public function view($id = null)
     {
         $group = $this->Groups->get($id, [
-            'contain' => ['Users'],
-            'contain' => ['Modules']
+            'contain' => ['Users', 'Modules']
         ]);
 
         $this->set('group', $group);
@@ -116,7 +115,6 @@ class GroupsController extends AppController
 
         $user = $this->Auth->user();
         
-
         if (isset($user['role']) && $user['role'] === 'admin') {
             $this->Auth->allow(['index', 'delete', 'add']);
         }
