@@ -44,15 +44,9 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Auth', [
-            'loginRedirect' => [
-                'controller' => 'Pages',
-                'action' => 'display', 'accueil'
-            ],
-            'logoutRedirect' => [
-                'controller' => 'Pages',
-                'action' => 'display',
-                'accueil'
-            ]
+            'loginRedirect' => ['controller' => 'Pages','action' => 'display', 'accueil'],
+            'logoutRedirect' => ['controller' => 'Pages','action' => 'display','accueil' ],
+            
         ]);
 
         /*
@@ -66,5 +60,13 @@ class AppController extends Controller
     public function beforeFilter(Event $event)
     {
         $this->Auth->allow(['display']);
+    }
+
+    public function isAuthorized($user)
+    {
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            return true;
+        }
+        return false;
     }
 }

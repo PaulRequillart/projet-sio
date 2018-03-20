@@ -90,7 +90,7 @@ $cakeDescription = 'Univ\'info';
             <!-- FIN MENU ELEVE -->
 
 
-                <li><?= $this->Html->link($this->request->session()->read('Auth.User.nom'), ['controller'=>'Users', 'action'=>'view',$this->request->session()->read('Auth.User.id')])?></li>
+                <li><?= $this->Html->link($this->request->session()->read('Auth.User.nom'), ['controller'=>'Users', 'action'=>'profile'])?></li>
                 <li><?= $this->Html->link('Deconnexion', ['controller'=>'Users', 'action'=>'logout'])?></li>
                 <?php } else{ ?>
                 <li><?= $this->Html->link('Connexion', ['controller'=>'Users', 'action'=>'login'])?></li>

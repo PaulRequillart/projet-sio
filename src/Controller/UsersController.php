@@ -14,6 +14,19 @@ use Cake\Event\Event;
 class UsersController extends AppController
 {
 
+    public function isAuthorized($user) {
+
+        if (in_array($this->request->action, ['view', 'edit', 'delete'])) {
+          $id = (int) $this->request->getParams['pass.0'];
+          
+          if ($id == $user['id']) {
+            return true;
+          }
+        }
+    
+        return parent::isAuthorized($user);
+    }
+
     /**
      * Index method
      *
@@ -52,6 +65,14 @@ class UsersController extends AppController
             'contain' => ['Groups', 'Marks']
         ]);
 
+        $this->set('user', $user);
+    }
+
+    public function profile(){
+        $id = $this->Auth->user('id');
+        $user = $this->Users->get($id, [
+            'contain' => ['Groups', 'Marks']
+        ]);
         $this->set('user', $user);
     }
 
@@ -134,7 +155,7 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                return $this->redirect($this->Auth->redirectUrl());
+                return $this->redirect(['controller' => 'Users','action' => 'view', $this->Auth->User('id')]);
             }
             $this->Flash->error(__('Invalid username or password, try again'));
         }
