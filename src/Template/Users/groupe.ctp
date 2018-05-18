@@ -22,11 +22,11 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($group->users as $user): ?>
+                <?php foreach ($group->users as $usergroup): ?>
                 <tr>
-                    <td><?= h($user->nom) ?></td>
-                    <td><?= h($user->prenom) ?></td>
-                    <td><?= $this->Text->autoLinkEmails(h($user->email)) ?></td>
+                    <td><?= h($usergroup->nom) ?></td>
+                    <td><?= h($usergroup->prenom) ?></td>
+                    <td><?= $this->Text->autoLinkEmails(h($usergroup->email)) ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>

@@ -21,7 +21,7 @@
 
 <div class="container no-border center">
     <div class="title">
-        <?= $this->Html->link(__('Changer l\'adresse mail'), ['action' => 'edit', $user->id], ['class'=>'bouton-profil']) ?>
+        <?= $this->Html->link(__('Changer l\'adresse mail'), ['action' => 'editEmail'], ['class'=>'bouton-profil']) ?>
         <?= $this->Html->link(__('Changer votre mot de passe'), ['action' => 'edit', $user->id], ['class'=>'bouton-profil']) ?>
         <?= $this->Html->link(__('Signaler un problème'), ['action' => 'edit', $user->id], ['class'=>'bouton-profil']) ?>
     </div>

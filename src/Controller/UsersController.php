@@ -100,6 +100,26 @@ class UsersController extends AppController
         $this->set('user', $user);
     }
 
+    public function editEmail(){
+        $id = $this->Auth->user('id');
+
+        $user = $this->Users->get($id, [
+            'contain' => []
+        ]);
+        if ($this->request->is(['patch', 'post', 'put'])) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('Adresse email enregistrée.'));
+
+                return $this->redirect(['controller'=>'Users','action' => 'profile']);
+            }
+            $this->Flash->error(__('Erreur, veuillez réessayer.'));
+        }
+        $groups = $this->Users->Groups->find('list', ['limit' => 200]);
+        $this->set(compact('user', 'groups'));
+
+    }
+
     public function groupe()
     {
         $id = $this->Auth->user('id');
