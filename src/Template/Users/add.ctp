@@ -23,7 +23,7 @@
             echo $this->Form->control('prenom');
             //echo $this->Form->control('username', ['label'=>'Email']);
             echo $this->Form->control('email');
-            echo $this->Form->control('password', ['label'=>'Mot de passe']);
+            echo $this->Form->control('password');
             echo $this->Form->control('role', [
                 'options' => ['admin' => 'Admin', 'professeur' =>'Professeur', 'eleve' => 'Elève']
             ]);

@@ -8,6 +8,7 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property int $value
+ * @property int $label
  * @property int $user_id
  * @property int $module_id
  *
@@ -28,6 +29,7 @@ class Mark extends Entity
      */
     protected $_accessible = [
         'value' => true,
+        'label' => true,
         'user_id' => true,
         'module_id' => true,
         'user' => true,

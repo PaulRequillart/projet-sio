@@ -120,4 +120,5 @@ class UsersTable extends Table
             $data['username'] = $username;
         }
     }
+
 }

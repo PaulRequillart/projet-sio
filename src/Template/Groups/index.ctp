@@ -4,22 +4,26 @@
  * @var \App\Model\Entity\Group[]|\Cake\Collection\CollectionInterface $groups
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Group'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="groups index large-9 medium-8 columns content">
-    <h3><?= __('Classes') ?></h3>
 
-    <ul>
-        <?php foreach ($groups as $group): ?>
-                <li><?= $this->Html->link(h($group->label), ['controller' => 'Groups', 'action' => 'view', $group->id]) ?></li>
-        <?php endforeach; ?>
-    </ul>
+<div class="container" >
+    <div class="title">
+        <h3 style="margin-left:15px"><?= __('Classes') ?></h3>
+        <?= $this->Html->link(__('Ajouter un groupe'), ['action' => 'add'], ['style' => 'margin-left:15px']) ?>
+
+        <hr>
+        
+    </div>
+
+    <div class="row">
+        <?php foreach($groups as $group): ?>
+            <?php if($group->label != "admin"): ?>
+                <div class="card">
+                    <?= $this->Html->link(h($group->label), ['controller' => 'Groups', 'action' => 'view', $group->id], ['class'=>'card-a']) ?>
+                </div>
+            <?php endif ?>
+        <?php endforeach ?>
+
+    </div>
+    
 
 </div>

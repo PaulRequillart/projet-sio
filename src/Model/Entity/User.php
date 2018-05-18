@@ -20,9 +20,7 @@ use Cake\Auth\DefaultPasswordHasher;
  * @property \App\Model\Entity\Group $group
  * @property \App\Model\Entity\Mark[] $marks
  */
-class User extends Entity
-{
-
+class User extends Entity{
     /**
      * Fields that can be mass assigned using newEntity() or patchEntity().
      *
@@ -32,6 +30,8 @@ class User extends Entity
      *
      * @var array
      */
+
+
     protected $_accessible = [
         'nom' => true,
         'prenom' => true,

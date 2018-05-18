@@ -21,6 +21,7 @@
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('value') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('label') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('user_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('module_id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
@@ -31,6 +32,7 @@
             <tr>
                 <td><?= $this->Number->format($mark->id) ?></td>
                 <td><?= $this->Number->format($mark->value) ?></td>
+                <td><?= h($mark->label) ?></td>
                 <td><?= $mark->has('user') ? $this->Html->link($mark->user->id, ['controller' => 'Users', 'action' => 'view', $mark->user->id]) : '' ?></td>
                 <td><?= $mark->has('module') ? $this->Html->link($mark->module->id, ['controller' => 'Modules', 'action' => 'view', $mark->module->id]) : '' ?></td>
                 <td class="actions">

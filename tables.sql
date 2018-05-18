@@ -31,6 +31,7 @@ CREATE TABLE modules(
 CREATE TABLE marks(
     id int AUTO_INCREMENT PRIMARY KEY,
     value int NOT NULL,
+    label text NOT NULL,
     user_id int NOT NULL REFERENCES users(id),
     module_id int NOT NULL REFERENCES modules(id)
 );

@@ -14,10 +14,14 @@
 </nav>
 <div class="users view large-9 medium-8 columns content">
     <div class="row">
-        <h4>Bienvenue <?= h($user->prenom).' '.h($user->nom); ?></h4>
+        <h4>Profil de <?= h($user->prenom).' '.h($user->nom); ?></h4>
     </div>
 
     <table class="vertical-table">
+        <tr>
+            <th scope="row"><?= __('ID') ?></th>
+            <td><?= h($user->id); ?></td>
+        </tr>
         <tr>
             <th scope="row"><?= __('Username') ?></th>
             <td><?= h($user->username); ?></td>
@@ -38,23 +42,15 @@
         <h4><?= __('Related Marks') ?></h4>
         <table cellpadding="0" cellspacing="0">
             <tr>
-                <th scope="col"><?= __('Id') ?></th>
-                <th scope="col"><?= __('Value') ?></th>
-                <th scope="col"><?= __('User Id') ?></th>
-                <th scope="col"><?= __('Module Id') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col"><?= __('Label')?></th>
+                <th scope="col"><?= __('Note') ?></th>
+                <th scope="col"><?= __('Module') ?></th>
             </tr>
-            <?php foreach ($user->marks as $marks): ?>
+            <?php foreach ($user->marks as $mark): ?>
             <tr>
-                <td><?= h($marks->id) ?></td>
-                <td><?= h($marks->value) ?></td>
-                <td><?= h($marks->user_id) ?></td>
-                <td><?= h($marks->module_id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Marks', 'action' => 'view', $marks->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Marks', 'action' => 'edit', $marks->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Marks', 'action' => 'delete', $marks->id], ['confirm' => __('Are you sure you want to delete # {0}?', $marks->id)]) ?>
-                </td>
+                <td><?= h($mark->label) ?></td>
+                <td><?= h($mark->value) ?></td>
+                <td><?= h($mark->module_id) ?></td>
             </tr>
             <?php endforeach; ?>
         </table>

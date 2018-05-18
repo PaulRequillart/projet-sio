@@ -3,6 +3,7 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
+use Cake\ORM\TableRegistry;
 
 /**
  * Users Controller
@@ -42,7 +43,19 @@ class UsersController extends AppController
         $this->set(compact('users'));
     }
 
+    
+
     public function indexEleve()
+    {
+        $this->paginate = [
+            'contain' => ['Groups']
+        ];
+        $users = $this->paginate($this->Users);
+
+        $this->set(compact('users'));
+    }
+
+    public function indexProf()
     {
         $this->paginate = [
             'contain' => ['Groups']
@@ -68,12 +81,36 @@ class UsersController extends AppController
         $this->set('user', $user);
     }
 
+    public function marks()
+    {
+        $id = $this->Auth->user('id');
+        $user = $this->Users->get($id, [
+            'contain' => ['Groups', 'Marks']
+        ]);
+        $this->set('user', $user);
+        $modules = TableRegistry::get('Modules');
+        $this->set('modules', $modules);
+    }
+
     public function profile(){
         $id = $this->Auth->user('id');
         $user = $this->Users->get($id, [
             'contain' => ['Groups', 'Marks']
         ]);
         $this->set('user', $user);
+    }
+
+    public function groupe()
+    {
+        $id = $this->Auth->user('id');
+        $user = $this->Users->get($id, [
+            'contain' => ['Groups', 'Marks']
+        ]);
+        $this->set('user', $user);
+        $groups = TableRegistry::get('Groups');
+        $group = $groups->get($user->group_id, [
+            'contain' => ['Users']]);
+        $this->set('group', $group);
     }
 
     /**
@@ -155,7 +192,7 @@ class UsersController extends AppController
             $user = $this->Auth->identify();
             if ($user) {
                 $this->Auth->setUser($user);
-                return $this->redirect(['controller' => 'Users','action' => 'view', $this->Auth->User('id')]);
+                return $this->redirect(['controller' => 'Users','action' => 'profile']);
             }
             $this->Flash->error(__('Invalid username or password, try again'));
         }

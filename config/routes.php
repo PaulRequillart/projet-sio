@@ -58,7 +58,8 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     $routes->connect('/login',['controller' => 'Users', 'action' => 'login'],['_name' => 'login']);
     $routes->connect('/mon-profil',['controller' => 'Users', 'action' => 'profile'],['_name' => 'mon-profil']);
-    
+    $routes->connect('/mon-groupe',['controller' => 'Users', 'action' => 'groupe'],['_name' => 'mon-groupe']);
+    $routes->connect('/mes-notes',['controller' => 'Users', 'action' => 'marks'],['_name' => 'mes-notes']);
 
     
 

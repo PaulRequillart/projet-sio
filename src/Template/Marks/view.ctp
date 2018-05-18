@@ -22,19 +22,24 @@
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('User') ?></th>
-            <td><?= $mark->has('user') ? $this->Html->link($mark->user->id, ['controller' => 'Users', 'action' => 'view', $mark->user->id]) : '' ?></td>
+            <td><?= $mark->has('user') ? $this->Html->link($mark->user->nom, ['controller' => 'Users', 'action' => 'view', $mark->user->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Module') ?></th>
-            <td><?= $mark->has('module') ? $this->Html->link($mark->module->id, ['controller' => 'Modules', 'action' => 'view', $mark->module->id]) : '' ?></td>
+            <td><?= $mark->has('module') ? $this->Html->link($mark->module->label, ['controller' => 'Modules', 'action' => 'view', $mark->module->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>
             <td><?= $this->Number->format($mark->id) ?></td>
         </tr>
         <tr>
+            <th scope="row"><?= __('Label') ?></th>
+            <td><?= $this->Number->format($mark->label) ?></td>
+        </tr>
+        <tr>
             <th scope="row"><?= __('Value') ?></th>
             <td><?= $this->Number->format($mark->value) ?></td>
         </tr>
+        
     </table>
 </div>

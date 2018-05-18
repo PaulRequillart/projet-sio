@@ -26,6 +26,7 @@
         <legend><?= __('Edit Mark') ?></legend>
         <?php
             echo $this->Form->control('value');
+            echo $this->Form->control('label');
             echo $this->Form->control('user_id', ['options' => $users]);
             echo $this->Form->control('module_id', ['options' => $modules]);
         ?>
