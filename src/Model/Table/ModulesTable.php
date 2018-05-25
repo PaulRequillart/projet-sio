@@ -10,6 +10,7 @@ use Cake\Validation\Validator;
  * Modules Model
  *
  * @property \App\Model\Table\GroupsTable|\Cake\ORM\Association\BelongsTo $Groups
+ * @property \App\Model\Table\UsersTable|\Cake\ORM\Association\BelongsTo $Users
  * @property \App\Model\Table\MarksTable|\Cake\ORM\Association\HasMany $Marks
  *
  * @method \App\Model\Entity\Module get($primaryKey, $options = [])
@@ -39,6 +40,11 @@ class ModulesTable extends Table
 
         $this->belongsTo('Groups', [
             'foreignKey' => 'group_id',
+            'joinType' => 'INNER'
+        ]);
+
+        $this->belongsTo('Users', [
+            'foreignKey' => 'user_id',
             'joinType' => 'INNER'
         ]);
 
@@ -78,6 +84,7 @@ class ModulesTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['group_id'], 'Groups'));
+        $rules->add($rules->existsIn(['user_id'], 'Users'));
 
         return $rules;
     }

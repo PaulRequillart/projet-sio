@@ -63,8 +63,12 @@ class ModulesController extends AppController
             $this->Flash->error(__('The module could not be saved. Please, try again.'));
         }
         $groups = $this->Modules->Groups->find('list', ['limit' => 200]);
-        $this->set(compact('module', 'groups'));
+        $users = $this->Modules->Users->find('list', ['limit' => 200])
+            ->where(['Users.role =' => 'Professeur']);
+
+        $this->set(compact('module', 'groups', 'users'));
     }
+    
 
     /**
      * Edit method

@@ -17,7 +17,7 @@ CREATE TABLE users(
     email text NOT NULL,
     password text NOT NULL,
     role text,
-    group_id int REFERENCES groups(id),
+    group_id int NOT NULL REFERENCES groups(id),
     created DATETIME DEFAULT NULL,
     modified DATETIME DEFAULT NULL
 );

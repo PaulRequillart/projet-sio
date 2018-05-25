@@ -12,6 +12,7 @@ use Cake\ORM\Entity;
  *
  * @property \App\Model\Entity\Group $group
  * @property \App\Model\Entity\Mark[] $marks
+ * @property \App\Model\Entity\User $user
  */
 class Module extends Entity
 {

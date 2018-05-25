@@ -19,6 +19,7 @@
         <?php
             echo $this->Form->control('label');
             echo $this->Form->control('group_id', ['options' => $groups, 'label' => 'Classe']);
+            echo $this->Form->control('user_id', ['options' => $users, 'label' => 'Prof']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

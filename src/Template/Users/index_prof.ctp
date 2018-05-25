@@ -8,7 +8,7 @@
 <div class="">
     <div class="title">
         <h3 style="margin-left:15px"><?= __('Professeurs') ?></h3>
-        <?= $this->Html->link(__('Ajouter un prof'), ['action' => 'add'], ['style' => 'margin-left:15px']) ?>
+        <?= $this->Html->link(__('Ajouter un prof'), ['action' => 'addProf'], ['style' => 'margin-left:15px']) ?>
 
         <hr>
         
@@ -25,7 +25,7 @@
         </thead>
         <tbody>
             <?php foreach ($users as $user): ?>
-            <?php if($user->role == 'professeur' && $user->group != 'admin'){ ?>
+            <?php if($user->role == 'professeur'){ ?>
             <tr>
                 <td><?= h($user->nom) ?></td>
                 <td><?= h($user->prenom) ?></td>
