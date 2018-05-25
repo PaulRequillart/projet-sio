@@ -115,8 +115,7 @@ class UsersController extends AppController
             }
             $this->Flash->error(__('Erreur, veuillez réessayer.'));
         }
-        $groups = $this->Users->Groups->find('list', ['limit' => 200]);
-        $this->set(compact('user', 'groups'));
+        $this->set(compact('user'));
 
     }
 

@@ -17,7 +17,7 @@ CREATE TABLE users(
     email text NOT NULL,
     password text NOT NULL,
     role text,
-    group_id int NOT NULL REFERENCES groups(id),
+    group_id int REFERENCES groups(id),
     created DATETIME DEFAULT NULL,
     modified DATETIME DEFAULT NULL
 );
@@ -25,7 +25,8 @@ CREATE TABLE users(
 CREATE TABLE modules(
     id int AUTO_INCREMENT PRIMARY KEY,
     label text NOT NULL,
-    group_id int NOT NULL REFERENCES groups(id)
+    group_id int NOT NULL REFERENCES groups(id),
+    user_id int NOT NULL REFERENCES users(id)
 );
 
 CREATE TABLE marks(
