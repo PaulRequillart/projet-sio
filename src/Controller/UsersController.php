@@ -98,6 +98,49 @@ class UsersController extends AppController
             'contain' => ['Groups', 'Marks']
         ]);
         $this->set('user', $user);
+
+        //partie editemail
+
+        $userEmail = $this->Users->get($id, [
+            'contain' => []
+        ]);
+        if (isset($this->request->data['btn1'])) {
+            if ($this->request->is(['patch', 'post', 'put'])) {
+                $userEmail = $this->Users->patchEntity($userEmail, $this->request->getData());
+                if ($this->Users->save($userEmail)) {
+                    $this->Flash->success(__('Adresse email enregistrée.'));
+
+                    return $this->redirect(['controller'=>'Users','action' => 'profile']);
+                }
+                $this->Flash->error(__('Erreur, veuillez réessayer.'));
+            }
+        }
+        $this->set(compact('userEmail'));
+
+        //Partie editPassword
+
+        $userPwd = $this->Users->get($id, [
+            'contain' => []
+        ]);
+        if (isset($this->request->data['btn2'])) {
+            if (!empty($this->request->data)) {
+                $userPwd = $this->Users->patchEntity($user, [
+                        'old_password'  => $this->request->data['old_password'],
+                        'password'      => $this->request->data['password1'],
+                        'password1'     => $this->request->data['password1'],
+                        'password2'     => $this->request->data['password2']
+                    ],
+                    ['validate' => 'password']
+                );
+                if ($this->Users->save($userPwd)) {
+                    $this->Flash->success('The password is successfully changed');
+                    return $this->redirect(['controller'=>'Users','action' => 'profile']);
+                } else {
+                    $this->Flash->error('There was an error during the save!');
+                }
+            }
+            $this->set(compact('userPwd'));
+        }
     }
 
     public function editEmail(){
@@ -171,7 +214,24 @@ class UsersController extends AppController
         $this->set(compact('user', 'groups'));
     }
 
-    /**
+    public function addEleve()
+    {
+        $user = $this->Users->newEntity();
+        if ($this->request->is('post')) {
+            $user = $this->Users->patchEntity($user, $this->request->getData());
+            if ($this->Users->save($user)) {
+                $this->Flash->success(__('The user has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+        }
+        $groups = $this->Users->Groups->find('list', ['limit' => 200])
+            ->where(['Groups.id <>' => '9', ' Groups.id <>' => '1']);
+        $this->set(compact('user', 'groups'));
+    }
+
+    /**&&
      * Edit method
      *
      * @param string|null $id User id.

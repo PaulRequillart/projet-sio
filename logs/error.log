@@ -6709,3 +6709,233 @@ Stack Trace:
 #36 {main}
 
 
+2018-05-31 13:04:16 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de '&& groups.id != '1') LIMIT 200' à la ligne 1
+Request URL: /users/add-eleve
+Referer URL: http://localhost:8765/users/index-eleve
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(288): Cake\ORM\Query->_execute()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(133): Cake\ORM\Query->all()
+#9 [internal function]: Cake\ORM\Query->getIterator()
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\View\Widget\SelectBoxWidget.php(149): iterator_to_array(Object(Cake\ORM\Query))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\View\Widget\SelectBoxWidget.php(116): Cake\View\Widget\SelectBoxWidget->_renderContent(Array)
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(2785): Cake\View\Widget\SelectBoxWidget->render(Array, Object(Cake\View\Form\EntityContext))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(2083): Cake\View\Helper\FormHelper->widget('select', Array)
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1250): Cake\View\Helper\FormHelper->select('group_id', Object(Cake\ORM\Query), Array)
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php(1148): Cake\View\Helper\FormHelper->_getInput('group_id', Array)
+#16 C:\wamp64\www\projetSIO\src\Template\Users\add_eleve.ctp(20): Cake\View\Helper\FormHelper->control('group_id', Array)
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\View\View.php(1203): include('C:\\wamp64\\www\\p...')
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('C:\\wamp64\\www\\p...', Array)
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('C:\\wamp64\\www\\p...')
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#22 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#23 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#27 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#29 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#30 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#31 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#32 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#33 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#34 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#36 {main}
+
+
+2018-05-31 13:13:45 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::showFormEmail() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'showFormEmail',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/show-form-email
+Referer URL: http://localhost:8765/mon-profil
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-05-31 13:18:06 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::showFormEmail() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'showFormEmail',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/show-form-email
+Referer URL: http://localhost:8765/mon-profil
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-05-31 14:21:29 Error: Fatal Error (1): Class 'App\Model\Table\DefaultPasswordHasher' not found in [C:\wamp64\www\projetSIO\src\Model\Table\UsersTable.php, line 101]
+Request URL: /mon-profil
+Referer URL: http://localhost:8765/mon-profil
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-05-31 14:21:29 Error: [Cake\Error\FatalErrorException] Class 'App\Model\Table\DefaultPasswordHasher' not found in C:\wamp64\www\projetSIO\src\Model\Table\UsersTable.php on line 101
+Request URL: /mon-profil
+Referer URL: http://localhost:8765/mon-profil
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Mode...', 'C:\\wamp64\\www\\p...', 101)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-05-31 14:23:02 Error: [RuntimeException] The Cake\ORM\Table::validationPassword() validation method does not exists.
+Request URL: /mon-profil
+Referer URL: http://localhost:8765/mon-profil
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(147): Cake\ORM\Table->createValidator('password')
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Marshaller.php(248): Cake\ORM\Table->getValidator('password')
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Marshaller.php(561): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(2519): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\User), Array, Array)
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(130): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\User), Array, Array)
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->profile()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-05-31 14:24:17 Error: [RuntimeException] The Cake\ORM\Table::validationPassword() validation method does not exists.
+Request URL: /mon-profil
+Referer URL: http://localhost:8765/mon-profil
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(147): Cake\ORM\Table->createValidator('password')
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Marshaller.php(248): Cake\ORM\Table->getValidator('password')
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Marshaller.php(561): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(2519): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\User), Array, Array)
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(130): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\User), Array, Array)
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->profile()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-05-31 14:31:45 Error: [RuntimeException] The Cake\ORM\Table::validationPassword() validation method does not exists.
+Request URL: /mon-profil
+Referer URL: http://localhost:8765/mon-profil
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(147): Cake\ORM\Table->createValidator('password')
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Marshaller.php(248): Cake\ORM\Table->getValidator('password')
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Marshaller.php(561): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(2519): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\User), Array, Array)
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(130): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\User), Array, Array)
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->profile()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-05-31 14:35:52 Error: [RuntimeException] The Cake\ORM\Table::validationPassword() validation method must return an instance of Cake\Validation\Validator.
+Request URL: /mon-profil
+Referer URL: http://localhost:8765/mon-profil
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Validation\ValidatorAwareTrait.php(147): Cake\ORM\Table->createValidator('password')
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Marshaller.php(248): Cake\ORM\Table->getValidator('password')
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Marshaller.php(561): Cake\ORM\Marshaller->_validate(Array, Array, false)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(2519): Cake\ORM\Marshaller->merge(Object(App\Model\Entity\User), Array, Array)
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(130): Cake\ORM\Table->patchEntity(Object(App\Model\Entity\User), Array, Array)
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->profile()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+

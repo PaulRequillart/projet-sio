@@ -45,6 +45,7 @@ $cakeDescription = 'Univ\'info';
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
     <?= $this->Html->css('style.css') ?>
+    <?= $this->Html->script('fonctions') ?>
     
 
     <?= $this->fetch('meta') ?>

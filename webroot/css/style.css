@@ -54,7 +54,7 @@
     border-radius: .25rem;
     border: 1px solid #094074;
     background-color: #094074;
-    color:white;
+    color:white !important;
     padding:5px 5px 0px 5px;
     display: inline-block;
     margin-left: 10px;
@@ -98,4 +98,7 @@
 
  .table{
      margin-top : 20px;
+ }
+
+#formEmail{
  }

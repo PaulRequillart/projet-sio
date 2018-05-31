@@ -7,6 +7,7 @@ use Cake\ORM\Table;
 use Cake\Validation\Validator;
 use Cake\Event\Event;
 use ArrayObject;
+use Cake\Auth\DefaultPasswordHasher;
 
 /**
  * Users Model
@@ -96,6 +97,56 @@ class UsersTable extends Table
         return $validator;
     }
 
+    public function validationPassword(Validator $validator )
+    {
+
+        $validator
+            ->add('old_password','custom',[
+                'rule'=>  function($value, $context){
+                    $user = $this->get($context['data']['id']);
+                    if ($user) {
+                        if ((new DefaultPasswordHasher)->check($value, $user->password)) {
+                            return true;
+                        }
+                    }
+                    return false;
+                },
+                'message'=>'The old password does not match the current password!',
+            ])
+            ->notEmpty('old_password');
+
+        $validator
+            ->add('password1', [
+                'length' => [
+                    'rule' => ['minLength', 6],
+                    'message' => 'The password have to be at least 6 characters!',
+                ]
+            ])
+            ->add('password1',[
+                'match'=>[
+                    'rule'=> ['compareWith','password2'],
+                    'message'=>'The passwords does not match!',
+                ]
+            ])
+            ->notEmpty('password1');
+        $validator
+            ->add('password2', [
+                'length' => [
+                    'rule' => ['minLength', 6],
+                    'message' => 'The password have to be at least 6 characters!',
+                ]
+            ])
+            ->add('password2',[
+                'match'=>[
+                    'rule'=> ['compareWith','password1'],
+                    'message'=>'The passwords does not match!',
+                ]
+            ])
+            ->notEmpty('password2');
+
+        return $validator;
+    }
+
     /**
      * Returns a rules checker object that will be used for validating
      * application integrity.
@@ -103,6 +154,8 @@ class UsersTable extends Table
      * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
      * @return \Cake\ORM\RulesChecker
      */
+
+
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->isUnique(['username']));

@@ -8,7 +8,7 @@
 <div class="">
     <div class="title">
         <h3 style="margin-left:15px"><?= __('Elèves') ?></h3>
-        <?= $this->Html->link(__('Ajouter un élève'), ['action' => 'add'], ['style' => 'margin-left:15px']) ?>
+        <?= $this->Html->link(__('Ajouter un élève'), ['action' => 'addEleve'], ['style' => 'margin-left:15px']) ?>
 
         <hr>
         
