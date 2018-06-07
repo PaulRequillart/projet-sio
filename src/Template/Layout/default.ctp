@@ -92,7 +92,8 @@ $cakeDescription = 'Univ\'info';
                     <?php }else if($role == 'eleve'){ ?>
                         <li class="nav-item"> <?= $this->Html->link('Ma classe', ['controller'=>'Users', 'action'=>'groupe'], ["class"=>"nav-link"])?> </li>
                         <li class="nav-item"> <?= $this->Html->link('Mes notes', ['controller'=>'Users', 'action'=>'marks'], ["class"=>"nav-link"])?> </li>
-                    <?php } ?>
+                        <li class="nav-item"> <?= $this->Html->link('Ma moyenne', ['controller'=>'Users', 'action'=>'moyenne'], ["class"=>"nav-link"])?> </li>
+                        <?php } ?>
             </ul>
         
             <!-- FIN MENU ELEVE -->

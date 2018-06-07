@@ -51,6 +51,10 @@ class UsersTable extends Table
         $this->hasMany('Marks', [
             'foreignKey' => 'user_id'
         ]);
+
+        $this->hasMany('Modules', [
+            'foreignKey' => 'user_id'
+        ]);
     }
 
     /**

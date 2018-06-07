@@ -110,8 +110,11 @@
 	</div>
 	<div class="inputGroup inputGroup3">
 		<?= $this->Form->button(__('Se Connecter'), ['class'=>'login']); ?>
+		
 	</div>	
-	
+	<div class="mdpOublieDiv">
+		<?= $this->Html->link('Mot de passe oublié', ['controller'=>'Users', 'action'=>'forgot-password'], ["class"=>"mdpOublie"])?>
+	</div>
 	<?= $this->Form->end() ?>
 </div>
 

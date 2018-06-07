@@ -40,12 +40,10 @@ class ModulesTable extends Table
 
         $this->belongsTo('Groups', [
             'foreignKey' => 'group_id',
-            'joinType' => 'INNER'
         ]);
 
         $this->belongsTo('Users', [
             'foreignKey' => 'user_id',
-            'joinType' => 'INNER'
         ]);
 
         $this->hasMany('Marks', [

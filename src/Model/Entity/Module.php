@@ -30,5 +30,6 @@ class Module extends Entity
         'label' => true,
         'marks' => true,
         'group_id' => true,
+        'user_id' => true,
     ];
 }

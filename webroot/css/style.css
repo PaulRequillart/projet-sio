@@ -100,5 +100,12 @@
      margin-top : 20px;
  }
 
-#formEmail{
+.mdpOublie{
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+ }
+
+ .mdpOublieDiv{
+     padding-top : 70px;
  }
