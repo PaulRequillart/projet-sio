@@ -1,0 +1,34 @@
+.moyenne{
+    width:70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.divmoyenne{
+   margin-left: auto !important;
+   margin-right: auto !important;
+   width: 70%;
+}
+
+.nomModule{
+    margin-left: 15%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.boutonImprimer{
+    display:none;
+}
+
+.infoUser{
+    display: inline;
+    padding-bottom: 15px;
+}
+
+@media print {
+    html, body {
+        height: 99%;    
+    }
+}
+

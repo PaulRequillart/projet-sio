@@ -4,32 +4,19 @@
  * @var \App\Model\Entity\Module[]|\Cake\Collection\CollectionInterface $modules
  */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Module'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Marks'), ['controller' => 'Marks', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Mark'), ['controller' => 'Marks', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="modules index large-9 medium-8 columns content">
-    <h3><?= __('Modules') ?></h3>
+<div class="">
+    <h3><?= __('Liste de tous les modules') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('Label') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($modules as $module): ?>
             <tr>
-                <td><?= $this->Number->format($module->id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $module->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $module->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $module->id], ['confirm' => __('Are you sure you want to delete # {0}?', $module->id)]) ?>
-                </td>
+                <td><?= $this->Html->link(h($module->label), ['controller' => 'Modules', 'action' => 'view', $module->id]) ?> </td>
+                
             </tr>
             <?php endforeach; ?>
         </tbody>

@@ -29,6 +29,21 @@ class ModulesController extends AppController
         $this->set(compact('modules'));
     }
 
+    public function indexProf()
+    {
+            $id = $this->Auth->user('id');
+            $user = $this->Users->get($id);
+            
+            $this->paginate = [
+                'contain' => ['Groups']
+            ];
+            
+            $modules = $this->paginate($this->Modules);
+    
+            $this->set(compact('modules'));
+            $this->set('user', $user);
+    }
+
     /**
      * View method
      *
