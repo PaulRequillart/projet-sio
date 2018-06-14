@@ -113,7 +113,7 @@
 		
 	</div>	
 	<div class="mdpOublieDiv">
-		<?= $this->Html->link('Mot de passe oublié', ['controller'=>'Users', 'action'=>'forgot-password'], ["class"=>"mdpOublie"])?>
+		<?= $this->Html->link('Mot de passe oublié', ['controller'=>'Users', 'action'=>'password'], ["class"=>"mdpOublie"])?>
 	</div>
 	<?= $this->Form->end() ?>
 </div>

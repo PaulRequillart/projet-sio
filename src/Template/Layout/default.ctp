@@ -51,6 +51,7 @@ $cakeDescription = 'Univ\'info';
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+    <?php echo $this->Html->css(['print'],['media' => 'print']); ?>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-topbar role="navigation">
@@ -97,7 +98,7 @@ $cakeDescription = 'Univ\'info';
             </ul>
         
             <!-- FIN MENU ELEVE -->
-
+    
             <ul class="navbar-nav ml-auto">        
                 <li class="nav-item dropdown">
                 <?= $this->Html->link($this->Html->image('user-logo.png', array('width' => '30', 'height' => '30')). ' ' .ucfirst($this->request->session()->read('Auth.User.nom')), '#', array('class'=>'nav-link dropdown-toggle', 'data-toggle'=>'dropdown',  'escape' => false));?>

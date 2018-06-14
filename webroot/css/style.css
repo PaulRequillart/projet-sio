@@ -109,3 +109,31 @@
  .mdpOublieDiv{
      padding-top : 70px;
  }
+
+ .moyenne{
+     width:70%;
+     text-align: center;
+     margin-left: auto;
+     margin-right: auto;    
+ }
+
+ .divmoyenne{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 70%;
+ }
+
+ .nomModule{
+     margin-left: 15%;
+     padding-bottom: 20px;
+     padding-top: 20px;
+ }
+
+ .infoUser{
+     display: none;
+ }
+
+ .boutonImprimer{
+    margin-left: 70% !important;
+    margin-top:5px !important;
+ }

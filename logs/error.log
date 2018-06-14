@@ -8039,3 +8039,943 @@ Cake\Http\Server::run() - CORE\src\Http\Server.php, line 81
 
 
 
+2018-06-14 07:27:22 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::js() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/js/jquery.printElement.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:27:23 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::js() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/js/jquery.printElement.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:27:31 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::js() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/js/jquery.printElement.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:27:31 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::js() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/js/jquery.printElement.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:28:05 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::js() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/js/jquery.printElement.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:28:06 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::js() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'js',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/js/jquery.printElement.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:35:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/js/imprimer.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:35:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/js/imprimer.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:36:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/js/imprimer.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:36:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/js/imprimer.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:37:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/js/imprimer.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 07:37:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Webroot could not be found.
+Exception Attributes: array (
+  'class' => 'Webroot',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /webroot/js/imprimer.js
+Referer URL: http://localhost:8765/users/moyenne
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 08:10:35 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::1() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '1',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/1
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 08:10:41 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::5() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => '5',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/5
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 08:12:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/imprimer.js
+Referer URL: http://localhost:8765/mon-groupe
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 08:12:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/imprimer.js
+Referer URL: http://localhost:8765/mon-groupe
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 08:16:56 Error: Fatal Error (1): Call to undefined function App\Controller\isAuthorized() in [C:\wamp64\www\projetSIO\src\Controller\UsersController.php, line 260]
+Request URL: /users/edit/1
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-06-14 08:16:56 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\isAuthorized() in C:\wamp64\www\projetSIO\src\Controller\UsersController.php on line 260
+Request URL: /users/edit/1
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', 'C:\\wamp64\\www\\p...', 260)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-06-14 08:22:55 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login2() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login2',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /users/login2
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 08:23:14 Error: [Cake\Controller\Exception\MissingActionException] Action UsersController::login() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+  'prefix' => '',
+  'plugin' => false,
+)
+Request URL: /login?redirect=%2Fusers%2Flogin2
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#15 {main}
+
+
+2018-06-14 09:42:27 Error: Fatal Error (1): Class 'App\Controller\Router' not found in [C:\wamp64\www\projetSIO\src\Controller\UsersController.php, line 329]
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-06-14 09:42:27 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\Router' not found in C:\wamp64\www\projetSIO\src\Controller\UsersController.php on line 329
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', 'C:\\wamp64\\www\\p...', 329)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2018-06-14 09:42:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Champ 'passkey' inconnu dans field list
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1594): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(332): Cake\ORM\Table->updateAll(Array, Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+
+
+2018-06-14 09:45:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Champ 'timeout' inconnu dans field list
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(39): PDOStatement->execute(NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\ORM\Table.php(1594): Cake\Database\Query->execute()
+#6 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(332): Cake\ORM\Table->updateAll(Array, Array)
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#23 {main}
+
+
+2018-06-14 09:45:45 Error: [Cake\Network\Exception\SocketException] Could not send email: mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\MailTransport.php(54): Cake\Mailer\Transport\MailTransport->_mail('requillart.paul...', 'Reset your pass...', '--e86f0d648e30a...', 'From: no-reply@...', NULL)
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\MailTransport->send(Object(Cake\Mailer\Email))
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#5 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-06-14 09:50:03 Error: [Cake\Network\Exception\SocketException] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(207): Cake\Network\Socket->connect()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(162): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 09:52:01 Error: [Cake\Network\Exception\SocketException] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(207): Cake\Network\Socket->connect()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(162): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 09:52:14 Error: [Cake\Network\Exception\SocketException] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(207): Cake\Network\Socket->connect()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(162): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 09:54:24 Error: [Cake\Network\Exception\SocketException] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(207): Cake\Network\Socket->connect()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(162): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 09:55:08 Error: [Cake\Network\Exception\SocketException] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(207): Cake\Network\Socket->connect()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(162): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 09:56:56 Error: [Cake\Network\Exception\SocketException] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(207): Cake\Network\Socket->connect()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(162): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 09:59:33 Error: [Cake\Network\Exception\SocketException] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(207): Cake\Network\Socket->connect()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(162): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 10:01:47 Error: [Cake\Network\Exception\SocketException] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(207): Cake\Network\Socket->connect()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(162): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 10:01:58 Error: [Cake\Network\Exception\SocketException] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(207): Cake\Network\Socket->connect()
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(162): Cake\Mailer\Transport\SmtpTransport->_connect()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 10:02:42 Error: [Cake\Network\Exception\SocketException] SMTP Error: 530 5.7.0 Must issue a STARTTLS command first. p38-v6sm11919808wrc.11 - gsmtp
+Request URL: /users/password
+Referer URL: http://localhost:8765/users/password
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(250): Cake\Mailer\Transport\SmtpTransport->_smtpSend('AUTH LOGIN', '334|500|502|504')
+#1 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Transport\SmtpTransport.php(163): Cake\Mailer\Transport\SmtpTransport->_auth()
+#2 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Mailer\Transport\DebugKitTransport.php(79): Cake\Mailer\Transport\SmtpTransport->send(Object(Cake\Mailer\Email))
+#3 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Mailer\Email.php(2118): DebugKit\Mailer\Transport\DebugKitTransport->send(Object(Cake\Mailer\Email))
+#4 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(350): Cake\Mailer\Email->send()
+#5 C:\wamp64\www\projetSIO\src\Controller\UsersController.php(333): App\Controller\UsersController->sendResetEmail('http://localhos...', Object(App\Model\Entity\User))
+#6 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\UsersController->password()
+#7 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#8 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsersController))
+#9 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\wamp64\www\projetSIO\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\wamp64\www\projetSIO\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+
+
+2018-06-14 10:16:22 Error: Fatal Error (1): Class 'App\Controller\Auth' not found in [C:\wamp64\www\projetSIO\src\Controller\AppController.php, line 65]
+Request URL: /login
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 223
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 105
+[main] - [internal], line ??
+
+
+
+2018-06-14 10:16:22 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\Auth' not found in C:\wamp64\www\projetSIO\src\Controller\AppController.php on line 65
+Request URL: /login
+Stack Trace:
+#0 C:\wamp64\www\projetSIO\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(105): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', 'C:\\wamp64\\www\\p...', 65)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

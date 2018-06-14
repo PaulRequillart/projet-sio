@@ -5,7 +5,7 @@
  */
 ?>
 
-<div>
+<div class="center">
         
         <?php if (!empty($user->marks) && $user->group->label != 'admin' ): ?>
         <h3>Mes dernières notes :</h3>

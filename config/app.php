@@ -178,15 +178,15 @@ return [
      */
     'EmailTransport' => [
         'default' => [
-            'className' => 'Mail',
+            'className' => 'Smtp',
             // The following keys are used in SMTP transports
-            'host' => 'localhost',
-            'port' => 25,
+            'host' => 'smtp.gmail.com',
+            'port' => 587,
             'timeout' => 30,
-            'username' => null,
-            'password' => null,
+            'username' => 'univinfo.sio@gmail.com',
+            'password' => 'UnivInfo2018',
             'client' => null,
-            'tls' => null,
+            'tls' => true,
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
     ],

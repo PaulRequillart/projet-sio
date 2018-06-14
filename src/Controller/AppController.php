@@ -60,6 +60,14 @@ class AppController extends Controller
     public function beforeFilter(Event $event)
     {
         $this->Auth->allow(['display']);
+
+        $allowed = array('Account' => array('login', 'password', 'reset'));
+		foreach ($allowed as $controller => $actions) {
+			if ($this->name === $controller && in_array($this->request->action, $actions)) {
+				$this->Common->flashMessage('The page you tried to access is not relevant if you are already logged in. Redirected to main page.', 'info');
+				return $this->redirect($this->Auth->loginRedirect);
+			}
+		}   
     }
 
     public function isAuthorized($user)
